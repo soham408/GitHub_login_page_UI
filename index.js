@@ -5,6 +5,7 @@ togglePassword.addEventListener('click', function () {
   const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
   passwordInput.setAttribute('type', type);
 
+  // Toggle icon (change the eye to a different icon, e.g., eye slash)
   this.textContent = type === 'password' ? 'Show' : 'Hide';
 });
 
@@ -22,3 +23,4 @@ form.addEventListener('submit', function(event) {
   console.log('Username:', username);
   console.log('Password:', password);
 });
+
