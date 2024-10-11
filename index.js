@@ -9,3 +9,16 @@ togglePassword.addEventListener('click', function () {
 });
 
 
+const form = document.getElementById('myform');
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent page refresh
+  const formData = new FormData(form);
+
+  // Get data to console
+  const username = formData.get('Username');
+  const password = formData.get('Password');
+
+  console.log('Username:', username);
+  console.log('Password:', password);
+});
